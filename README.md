@@ -115,16 +115,12 @@ npm run dev
 | #  | Member Name              | Contribution                                      |
 |----|--------------------------|---------------------------------------------------|
 | 1  | Tsepo Ntlhane            | Project coordination, Backend API, Authentication |
-| 2  | Member 2                 | Frontend UI design, Home page, Menu page          |
-| 3  | Member 3                 | Shopping Cart functionality, Order placement      |
-| 4  | Member 4                 | Staff Dashboard, Order management                 |
-| 5  | Member 5                 | Menu management (Add/Edit/Delete items)           |
-| 6  | Member 6                 | Database integration (Redis), Seed data           |
-| 7  | Member 7                 | Testing, Documentation, README, Deployment        |
-
-> **Note:** Please replace "Member 2" to "Member 7" with the real names of your group members and adjust the contributions if needed.
-
----
+| 2  | Paballo Nkone            | Frontend UI design, Home page, Menu page          |
+| 3  | Malefu Motlalehi         | Shopping Cart functionality, Order placement      |
+| 4  | Monyane Ntlama           | Staff Dashboard, Order management                 |
+| 5  | Mahlape Ntoko            | Menu management (Add/Edit/Delete items)           |
+| 6  | Andrias Nchabeng         | Database integration (Redis), Seed data           |
+| 7  | Moseli Motopi            | Testing, Documentation, README, Deployment        |
 
 ## How to Run the Project
 
@@ -139,11 +135,15 @@ npm run dev
 
 *(Add screenshots of the following pages here)*
 
-- Home Page  
-- Menu Page  
-- Cart & Order Confirmation  
-- Staff Login  
-- Staff Dashboard (Orders, Menu, Stats)
+Home page(image-2.png)
+Menu page(image-1.png) 
+Menu page(image-2.png) 
+Cart & Order Confirmation(image-3.png)  
+Staff Login(image-4.png)  
+Staff Dashboard-Orders(image-5.png)
+Staff Dashboard-Menu(image-6.png)
+Staff Dashboard-Stats(image-7.png)
+
 
 ---
 
