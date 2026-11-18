@@ -4,6 +4,8 @@ A full-stack web application developed for managing a local coffee shop.
 Customers can browse the menu, add items to a cart, and place orders.  
 Staff can manage menu items, process orders, and view daily summaries.
 
+**GitHub Repository:** [https://github.com/tsepontlhane15/coffee-shop-system](https://github.com/tsepontlhane15/coffee-shop-system)
+
 ---
 
 ## Technologies Used
@@ -12,7 +14,7 @@ Staff can manage menu items, process orders, and view daily summaries.
 - React (Vite)
 - React Router DOM
 - Fetch API
-- Context API (Cart state)
+- Context API (Cart state management)
 - Hosted on Vercel / Netlify
 
 ### Backend
@@ -31,9 +33,9 @@ Staff can manage menu items, process orders, and view daily summaries.
 
 ### Customer Features
 - View menu items (Coffee, Tea, Pastries, Other)
-- See name, description, price and availability
+- See item name, description, price and availability
 - Add items to cart and update quantities
-- Place an order with name and optional notes
+- Place an order with customer name and optional notes
 - Receive order confirmation with unique order number
 
 ### Staff Features
@@ -43,6 +45,31 @@ Staff can manage menu items, process orders, and view daily summaries.
 - View all customer orders
 - Update order status (Pending → Preparing → Ready → Collected)
 - View daily order statistics and revenue
+
+---
+
+## Screenshots
+
+### Menu Page
+![Menu Page](screenshots/menu.png)
+
+### Menu Page (Continued)
+![Menu Page 2](screenshots/menu-2.png)
+
+### Order Confirmation
+![Order Confirmation](screenshots/order-confirmation.png)
+
+### Staff Login
+![Staff Login](screenshots/staff-login.png)
+
+### Staff Dashboard - Orders
+![Staff Dashboard Orders](screenshots/staff-orders.png)
+
+### Staff Dashboard - Menu Management
+![Staff Dashboard Menu](screenshots/staff-menu.png)
+
+### Staff Dashboard - Daily Stats
+![Staff Dashboard Stats](screenshots/staff-stats.png)
 
 ---
 
@@ -67,46 +94,54 @@ Staff can manage menu items, process orders, and view daily summaries.
 
 ## Installation & Setup
 
-### Backend
+### Prerequisites
+- Node.js (v18+)
+- Redis
+- Git
+
+### Backend Setup
 ```bash
 cd coffee-shop-backend
 npm install
 ```
 
-Create `.env` file:
+Create a `.env` file:
 ```env
 PORT=5000
 REDIS_URL=redis://localhost:6379
 JWT_SECRET=your_secret_key
+JWT_EXPIRES_IN=24h
 STAFF_USERNAME=staff
 STAFF_PASSWORD=staff123
 ```
 
-Run the server:
+Start the server:
 ```bash
 npm run dev
 ```
 
-### Frontend
+### Frontend Setup
 ```bash
 cd coffee-shop-frontend
 npm install
 npm run dev
 ```
 
+The frontend will run at: `http://localhost:5173`
+
 ---
 
 ## Default Staff Login
-- **Username:** staff  
-- **Password:** staff123
+- **Username:** `staff`
+- **Password:** `staff123`
 
 ---
 
 ## Deployment
 
-- **Backend:** Render  
-- **Frontend:** Vercel or Netlify  
-- **Database:** Redis (Upstash / Redis Cloud)
+- **Backend:** Render
+- **Frontend:** Vercel or Netlify
+- **Database:** Redis (Upstash or Redis Cloud recommended)
 
 ---
 
@@ -115,35 +150,23 @@ npm run dev
 | #  | Member Name              | Contribution                                      |
 |----|--------------------------|---------------------------------------------------|
 | 1  | Tsepo Ntlhane            | Project coordination, Backend API, Authentication |
-| 2  | Paballo Nkone            | Frontend UI design, Home page, Menu page          |
-| 3  | Malefu Motlalehi         | Shopping Cart functionality, Order placement      |
-| 4  | Monyane Ntlama           | Staff Dashboard, Order management                 |
-| 5  | Mahlape Ntoko            | Menu management (Add/Edit/Delete items)           |
-| 6  | Andrias Nchabeng         | Database integration (Redis), Seed data           |
-| 7  | Moseli Motopi            | Testing, Documentation, README, Deployment        |
+| 2  | Member 2                 | Frontend UI design, Home page, Menu page          |
+| 3  | Member 3                 | Shopping Cart functionality, Order placement      |
+| 4  | Member 4                 | Staff Dashboard, Order management                 |
+| 5  | Member 5                 | Menu management (Add/Edit/Delete items)           |
+| 6  | Member 6                 | Database integration (Redis), Seed data           |
+| 7  | Member 7                 | Testing, Documentation, README, Deployment        |
 
-## How to Run the Project
-
-1. Start Redis
-2. Start the backend (`npm run dev` inside `coffee-shop-backend`)
-3. Start the frontend (`npm run dev` inside `coffee-shop-frontend`)
-4. Open `http://localhost:5173` in the browser
+> **Note:** Replace "Member 2" to "Member 7" with the real names of your group members.
 
 ---
 
-## Screenshots
+## How to Run Locally
 
-*(Add screenshots of the following pages here)*
-
-Home page(image-2.png)
-Menu page(image-1.png) 
-Menu page(image-2.png) 
-Cart & Order Confirmation(image-3.png)  
-Staff Login(image-4.png)  
-Staff Dashboard-Orders(image-5.png)
-Staff Dashboard-Menu(image-6.png)
-Staff Dashboard-Stats(image-7.png)
-
+1. Start Redis
+2. Start Backend → `cd coffee-shop-backend` then `npm run dev`
+3. Start Frontend → `cd coffee-shop-frontend` then `npm run dev`
+4. Open `http://localhost:5173` in your browser
 
 ---
 
