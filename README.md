@@ -51,7 +51,7 @@ Staff can manage menu items, process orders, and view daily summaries.
 ## Screenshots
 
 ### Menu Page
-![Menu Page](screenshots/menu.png)
+![Menu Page](screenshots/image.png)
 
 ### Menu Page (Continued)
 ![Menu Page 2](screenshots/menu-2.png)
