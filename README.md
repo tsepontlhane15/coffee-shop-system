@@ -160,9 +160,14 @@ The frontend will run at: `http://localhost:5173`
 ## How to Run Locally
 
 1. Start Redis
+<<<<<<< HEAD
 2. Start Backend → `cd coffee-shop-backend` then `npm run dev`
 3. Start Frontend → `cd coffee-shop-frontend` then `npm run dev`
 4. Open `http://localhost:5173` in your browser
+=======
+2. Start the backend (`npm run dev` inside `coffee-shop-backend`)
+3. Start the frontend (`npm run dev` inside `coffee-shop-frontend`)
+4. Open `http://localhost:5173` in the browser
 
 ---
 
