@@ -133,8 +133,6 @@ npm run dev
 
 ## Screenshots
 
-*(Add screenshots of the following pages here)*
-
 Home page(image-2.png)
 Menu page(image-1.png) 
 Menu page(image-2.png) 
