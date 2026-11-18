@@ -150,16 +150,12 @@ The frontend will run at: `http://localhost:5173`
 | #  | Member Name              | Contribution                                      |
 |----|--------------------------|---------------------------------------------------|
 | 1  | Tsepo Ntlhane            | Project coordination, Backend API, Authentication |
-| 2  | Member 2                 | Frontend UI design, Home page, Menu page          |
-| 3  | Member 3                 | Shopping Cart functionality, Order placement      |
-| 4  | Member 4                 | Staff Dashboard, Order management                 |
-| 5  | Member 5                 | Menu management (Add/Edit/Delete items)           |
-| 6  | Member 6                 | Database integration (Redis), Seed data           |
-| 7  | Member 7                 | Testing, Documentation, README, Deployment        |
-
-> **Note:** Replace "Member 2" to "Member 7" with the real names of your group members.
-
----
+| 2  | Paballo Nkone            | Frontend UI design, Home page, Menu page          |
+| 3  | Malefu Motlalehi         | Shopping Cart functionality, Order placement      |
+| 4  | Mahlape ntoko            | Staff Dashboard, Order management                 |
+| 5  | Monyane Ntlama           | Menu management (Add/Edit/Delete items)           |
+| 6  | Andrias Nchabeng         | Database integration (Redis), Seed data           |
+| 7  | Moseli Motopi            | Testing, Documentation, README, Deployment        |
 
 ## How to Run Locally
 
