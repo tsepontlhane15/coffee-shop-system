@@ -123,7 +123,6 @@ function StaffLogin() {
         </form>
 
         <p style={{ textAlign: "center", marginTop: "1.5rem", color: "#888", fontSize: "0.9rem" }}>
-          Default: <strong>staff</strong> / <strong>staff123</strong>
         </p>
       </div>
     </div>
