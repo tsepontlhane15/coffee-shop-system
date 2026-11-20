@@ -1,26 +1,20 @@
-const { createClient } = require('redis');
+const Redis = require('ioredis');
 require('dotenv').config();
 
-const redisClient = createClient({
-  url: process.env.REDIS_URL,
-  socket: {
-    tls: process.env.REDIS_URL?.startsWith('rediss://'),
-    rejectUnauthorized: false,
-  },
-});
-
-redisClient.on('error', (err) => {
-  console.error('Redis Client Error:', err);
+const redisClient = new Redis(process.env.REDIS_URL, {
+  maxRetriesPerRequest: 3,
+  tls: process.env.REDIS_URL?.startsWith('rediss://') ? {} : undefined,
 });
 
 redisClient.on('connect', () => {
   console.log('Connected to Redis');
 });
 
+redisClient.on('error', (err) => {
+  console.error('Redis Client Error:', err.message);
+});
+
 async function connectRedis() {
-  if (!redisClient.isOpen) {
-    await redisClient.connect();
-  }
   return redisClient;
 }
 
