@@ -2,7 +2,11 @@ const { createClient } = require('redis');
 require('dotenv').config();
 
 const redisClient = createClient({
-  url: process.env.REDIS_URL || 'redis://localhost:6379',
+  url: process.env.REDIS_URL,
+  socket: {
+    tls: process.env.REDIS_URL?.startsWith('rediss://'),
+    rejectUnauthorized: false,
+  },
 });
 
 redisClient.on('error', (err) => {
