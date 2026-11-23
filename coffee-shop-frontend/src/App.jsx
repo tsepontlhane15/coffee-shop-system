@@ -14,7 +14,7 @@ function App() {
       {/* NAVBAR */}
       <nav className="navbar">
         <div className="logo">
-          <Link to="/">☕ LIBATA COFFE SHOP</Link>
+          <Link to="/">☕ LIBATA COFFEE SHOP</Link>
         </div>
         <div className="nav-links">
           <Link to="/">Home</Link>
