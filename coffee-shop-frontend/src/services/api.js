@@ -10,10 +10,10 @@ async function request(endpoint, options = {}) {
   };
 
   if (token) {
-    headers.Authorization = Bearer ${token};
+    headers.Authorization = `Bearer ${token}`;
   }
 
-  const response = await fetch(${API_URL}${endpoint}, {
+  const response = await fetch(`${API_URL}${endpoint}`, {
     ...options,
     headers,
   });
@@ -29,22 +29,22 @@ async function request(endpoint, options = {}) {
 
 // ========== MENU ==========
 export const getMenu = () => request("/menu");
-export const getMenuItem = (id) => request(/menu/${id});
+export const getMenuItem = (id) => request(`/menu/${id}`);
 export const createMenuItem = (item) =>
   request("/menu", { method: "POST", body: JSON.stringify(item) });
 export const updateMenuItem = (id, item) =>
-  request(/menu/${id}, { method: "PUT", body: JSON.stringify(item) });
+  request(`/menu/${id}`, { method: "PUT", body: JSON.stringify(item) });
 export const deleteMenuItem = (id) =>
-  request(/menu/${id}, { method: "DELETE" });
+  request(`/menu/${id}`, { method: "DELETE" });
 
 // ========== ORDERS ==========
 export const getOrders = (status) =>
-  request(status ? /orders?status=${status} : "/orders");
-export const getOrder = (id) => request(/orders/${id});
+  request(status ? `/orders?status=${status}` : "/orders");
+export const getOrder = (id) => request(`/orders/${id}`);
 export const placeOrder = (order) =>
   request("/orders", { method: "POST", body: JSON.stringify(order) });
 export const updateOrderStatus = (id, status) =>
-  request(/orders/${id}/status, {
+  request(`/orders/${id}/status`, {
     method: "PATCH",
     body: JSON.stringify({ status }),
   });
