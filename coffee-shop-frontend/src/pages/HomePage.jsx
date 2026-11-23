@@ -29,7 +29,7 @@ function HomePage() {
               textShadow: "0 2px 10px rgba(0,0,0,0.4)",
             }}
           >
-            LIBATA COFFE SHOP
+            LIBATA COFFEE SHOP
           </h1>
           <p
             style={{
