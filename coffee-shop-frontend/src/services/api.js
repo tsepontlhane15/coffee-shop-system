@@ -1,6 +1,5 @@
 const API_URL = (import.meta.env.VITE_API_URL || "http://localhost:5000/api").replace(/\/$/, "");
 
-// Helper function for requests
 async function request(endpoint, options = {}) {
   const token = localStorage.getItem("token");
 
@@ -27,7 +26,7 @@ async function request(endpoint, options = {}) {
   return data;
 }
 
-// ========== MENU ==========
+// MENU
 export const getMenu = () => request("/menu");
 export const getMenuItem = (id) => request(`/menu/${id}`);
 export const createMenuItem = (item) =>
@@ -37,7 +36,7 @@ export const updateMenuItem = (id, item) =>
 export const deleteMenuItem = (id) =>
   request(`/menu/${id}`, { method: "DELETE" });
 
-// ========== ORDERS ==========
+// ORDERS
 export const getOrders = (status) =>
   request(status ? `/orders?status=${status}` : "/orders");
 export const getOrder = (id) => request(`/orders/${id}`);
@@ -50,7 +49,7 @@ export const updateOrderStatus = (id, status) =>
   });
 export const getDailyStats = () => request("/orders/stats/daily");
 
-// ========== AUTH ==========
+// AUTH
 export const login = (username, password) =>
   request("/auth/login", {
     method: "POST",
